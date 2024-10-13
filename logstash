@@ -7,18 +7,18 @@ get_input() {
 }
 
 # Welcome message
-echo "who-are-you: Hi, what's your name?"
+echo "Talk to me: Hi, what's your name?"
 read -r name
 
 # Greet the user by name
-echo "who-are-you: Hi $name!"
+echo "Talk to me: Hi $name!"
 
 # Ask if the user wants to continue
 get_input "Do you want to continue? (yes/no)"
 
 # Check the user's response
 if [[ "$user_input" =~ ^[Yy] ]]; then
-    echo "who-are-you: Great! You need to install Logstash. Do you want to proceed? (yes/no)"
+    echo "Talk to me: Great! You need to install Logstash. Do you want to proceed? (yes/no)"
 
     # Check the user's response
     get_input "Do you want to install Logstash? (yes/no)"
